@@ -9,10 +9,10 @@ namespace Unicorno.UiAutomationV1.Abstractions
 {
     public abstract class UiTest
     {
-        private static ILocatorAssertions Expect(ILocator locator) => Assertions.Expect(locator);
+        private ILocatorAssertions Expect(ILocator locator) => Assertions.Expect(locator);
 
-        private static IPageAssertions Expect(IPage page) => Assertions.Expect(page);
+        private IPageAssertions Expect(IPage page) => Assertions.Expect(page);
 
-        private static IAPIResponseAssertions Expect(IAPIResponse response) => Assertions.Expect(response);
+        private IAPIResponseAssertions Expect(IAPIResponse response) => Assertions.Expect(response);
     }
 }
