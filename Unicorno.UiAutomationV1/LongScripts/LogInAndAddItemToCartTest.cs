@@ -1,11 +1,11 @@
-﻿using Microsoft.Playwright;
+using Microsoft.Playwright;
 using Unicorno.UiAutomationV1.Abstractions;
 
 namespace Unicorno.UiAutomationV1.Scripts
 {
-    public static class LogInAndAddItemToCartTest : UiTest
+    public class LogInAndAddItemToCartTest : UiTest
     {
-        public static async void RunTest(IPage page)
+        public async void RunTest(IPage page)
         {
             // Log In to service
             await page.GotoAsync("https://www.saucedemo.com/");
