@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 using Microsoft.Playwright;
 using Unicorno.UiAutomationV1.Scripts;
 
@@ -15,8 +15,9 @@ var context = await browser.NewContextAsync();
 var page = await browser.NewPageAsync();
 
 
-// Long script
-LogInAndAddItemToCartTest.RunTest(page);
+// Integration tests
+(new AddItemToCartTest()).RunTest(page);
+(new BuyItemTest()).RunTest(page)
 
 
 
