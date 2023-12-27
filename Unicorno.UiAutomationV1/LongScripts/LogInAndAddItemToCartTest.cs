@@ -3,7 +3,7 @@ using Unicorno.UiAutomationV1.Abstractions;
 
 namespace Unicorno.UiAutomationV1.Scripts
 {
-    public class LogInAndAddItemToCartTest : UiTest
+    public class AddItemToCartTest : UiTest
     {
         public async void RunTest(IPage page)
         {
