@@ -1,4 +1,4 @@
-﻿using Microsoft.Playwright;
+using Microsoft.Playwright;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Unicorno.UiAutomationV1.Abstractions
 {
-    public static class UiTest
+    public abstract class UiTest
     {
         private static ILocatorAssertions Expect(ILocator locator) => Assertions.Expect(locator);
 
