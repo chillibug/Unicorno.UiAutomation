@@ -1,5 +1,8 @@
 ﻿Version 1 - Simple scripted testing
 
+This is a basic set of tests recorded using playwright and demonstrate how playwright automation
+works. There is some simple code abstraction to make each test eaier to read.
+
 Setup Playwright - https://www.twilio.com/blog/test-web-apps-with-playwright-and-csharp-dotnet
 				 - https://playwright.dev/dotnet/docs/intro
 
