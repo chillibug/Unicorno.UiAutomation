@@ -5,7 +5,7 @@ namespace Unicorno.UiAutomationV1.Tests;
 
 public class BuyItemTest : UiTest
 {
-    public async void RunTest(IPage page)
+    public async Task RunTest(IPage page)
     {
         // Log In to service
         await page.GotoAsync("https://www.saucedemo.com/");

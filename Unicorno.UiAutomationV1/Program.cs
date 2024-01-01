@@ -1,5 +1,6 @@
 // See https://aka.ms/new-console-template for more information
 using Microsoft.Playwright;
+using System.Reflection;
 using Unicorno.UiAutomationV1.Tests;
 
 
@@ -16,9 +17,9 @@ var page = await browser.NewPageAsync();
 
 
 // Integration tests
-(new LogInTest()).RunTest(page);
-(new AddItemToCartTest()).RunTest(page);
-(new BuyItemTest()).RunTest(page);
+await (new LogInTest()).RunTest(page);
+await (new AddItemToCartTest()).RunTest(page);
+await (new BuyItemTest()).RunTest(page);
 
 
 

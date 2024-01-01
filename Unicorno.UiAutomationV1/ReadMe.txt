@@ -11,6 +11,8 @@ dotnet add package Microsoft.Playwright
 
 dotnet build
 
+https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4
+
 pwsh bin/Debug/net8.0/playwright.ps1 install
 
 add a bunch of code
